@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Блог о путешествиях">
+    <meta name="keywords" content="blog, travels, adventure">
+    <meta name="author" content="bizz">
+    <title>На краю света</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="main.html">Главная</a>
+            </li>
+            <li>
+                Мои путешествия
+                <ul>
+                    <li>
+                        <a href="Papua.html">Папуа Новая Гвинея</a>
+                    </li>
+                    <li>
+                        <a href="Grenland.html">Гренландия</a>
+                    </li>
+                    <li>
+                        <a href="addstory.html">Добавить статью</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="findme.html">Где я?</a>
+            </li>
+            <li>
+                <a href="auth.html">Авторизация</a>
+            </li>
+            <li>
+                <a href="reg.html">Регистрация</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h3 align="center">Добавить статью</h3>
+    <form id="addstory" enctype="multipart/form-data" name="addstory" action="#" method="post">
+        <fieldset>
+            <div>
+                <label for="name">Введите название статьи</label>
+                <input minlength="2" maxlength="20" id="name" type="text" name="name" placeholder="от 2 до 20 символов" autofocus required>
+            </div>
+            <div>
+                <label for="story">Текст статьи</label>
+                <textarea id="story" minlength="20" name="description" placeholder="минимум 20 символов" required></textarea>
+            </div>
+            <div>
+                <label for="img">Добавить изображения</label>
+                <input id="img" multiple type="file" name="img[]" accept="image/*">
+            </div>
+            <div>
+                <label for="video">Добавить видеозаписи</label>
+                <input id="video" multiple type="file" name="vid[]" accept="video/*">
+            </div>
+            <div>
+                <label for="audio">Добавить аудиозаписи</label>
+                <input id="audio" multiple type="file" name="aud[]" accept="audio/*">
+            </div>
+            <div>
+                <fieldset>
+                    <p>Возможность коментировать другими пользователями</p>
+                    <label>
+                        Включить
+                        <input checked type="radio" name="comments" value="on">
+                    </label>
+                    <label>
+                        Отключить
+                    <input type="radio" name="comments" value="off">
+                    </label>
+
+                </fieldset>
+            </div>
+            <input type="submit" value="Опубликовать статью">
+        </fieldset>
+    </form>
+    <button type="reset" form="addstory" title="кнопка не в форме">Сброс</button>
+</main>
+<footer>
+    <section align="left">
+        <h5><a href="me.html">Обо мне</a></h5>
+    </section>
+    <section align="right">
+        <h5>Соц. Сети</h5>
+        <nav>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+        </nav>
+    </section>
+    <section align="center">
+        <h5>Поддержать проект</h5>
+        <nav>
+            <a href="https://www.paypal.com/ru/home" target="_blank">Paypal</a>
+            <a href="https://www.webmoney.ru/" target="_blank">Webmoney</a>
+            <a href="https://qiwi.com/" target="_blank">Qiwi</a>
+
+        </nav>
+    </section>
+</footer>
+</body>
+</html>
