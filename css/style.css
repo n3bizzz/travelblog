@@ -77,3 +77,7 @@ p em {
 .blockstory {
     margin-bottom: 40px;
 }
+
+.day {
+    font-size: 20px;
+}
