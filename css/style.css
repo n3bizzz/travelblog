@@ -105,3 +105,15 @@ iframe {
     height: auto;
 
 }
+.mycontacts {
+    margin-top: 40px;
+    margin-left: 10px;
+    color: gold;
+}
+ol {
+    color: gold;
+}
+ol a {
+    color: orange;
+    text-decoration-line: underline
+}
