@@ -1,1 +1,15 @@
 @import "style.css";
+form {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+fieldset {
+    border: 1px solid orangered; /*рамка, ширина, тип рамки, цвет*/
+}
+
+input[type="submit"] {
+    border: 0; /*убрать рамку*/
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: orangered;
+}
