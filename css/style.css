@@ -1,0 +1,79 @@
+body{
+    background-color: whitesmoke;
+    background-image: url(bodybg.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: top center;
+    font-size: 20px;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.about {
+    background-color: whitesmoke;
+    font-size: 20px;
+    color: black;
+    font-family: Arial;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.autor {
+    color: orangered;
+}
+.readnext {
+    padding: 10px 20px;
+    background: whitesmoke;
+    color: green;
+    font-family: Impact;
+    font-size: 15px;
+    border-radius: 10px;
+}
+h1 {
+    font-family: "Arial Black";
+    color: red;
+}
+
+
+h2 {
+    margin-top: 140px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    padding: 0;
+    text-decoration-line: underline;
+    font-family: "Californian FB";
+}
+.namestory {
+    font-family: "Times New Roman";
+    color: green;
+    font-size: 25px;
+}
+h3 {
+    margin: 0;
+}
+h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+p em {
+    background-color: whitesmoke;
+    font-family: "Californian FB";
+    border-radius: 15px;
+}
+
+.blockstory {
+    margin-bottom: 40px;
+}
