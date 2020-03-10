@@ -1,6 +1,6 @@
 body{
     background-color: whitesmoke;
-    background-image: url(bodybg.jpg);
+    background-image: url(../img/bodybg.jpg);
     background-attachment: fixed;
     background-size: 100%;
     background-position: top center;
