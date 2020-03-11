@@ -96,10 +96,13 @@ p em {
     font-size: 20px;
     margin: 30px;
 }
-iframe {
+iframe{
     margin-bottom: 40px;
     margin-left: 10px;
     margin-right: 10px;
+}
+iframe.map{
+    margin: 0;
 }
 .date {
     color: orangered;
