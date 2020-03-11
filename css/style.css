@@ -110,20 +110,20 @@ iframe {
     margin: 10px;
 }
 .ava {
-    width: 20%;
-    height: auto;
+    width: 100%;
+    height: 100%;
 
 }
 .mycontacts {
     margin-top: 40px;
     margin-left: 10px;
-    color: gold;
+    color: darkgreen;
 }
 ol {
-    color: gold;
+    color: darkgreen;
 }
 ol a {
-    color: orange;
+    color: lightgreen;
     text-decoration-line: underline
 }
 
