@@ -7,19 +7,19 @@
     <meta name="author" content="bizz">
     <title>На краю света</title>
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
+        <nav class="container">
+            <ul class="flex-row menu">
+                <li class="flex-2 content-center">
                     <a href="main.html">Главная</a>
                 </li>
-                <li>
-                    Мои путешествия
-                    <ul>
+                <li class="flex-2 content-center">
+                    <a href="#">Мои путешествия</a>
+                    <ul class="submenu">
                         <li>
                             <a href="Papua.html">Папуа Новая Гвинея</a>
                         </li>
@@ -31,85 +31,100 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="flex-2 content-center">
                     <a href="Findme.html">Где я?</a>
                 </li>
-                <li>
+                <li class="flex-2 content-center">
                     <a href="auth.html">Авторизация</a>
                 </li>
-                <li>
+                <li class="flex-2 content-center">
                     <a href="reg.html">Регистрация</a>
+                </li>
+                <li class="flex-2 content-center">
+                    <a href="me.html">Контакты</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <article class="container">
-            <h1 align="center">НА КРАЮ СВЕТА</h1>
-            <p align="center">
+            <h1 class="content-center">НА КРАЮ СВЕТА</h1>
+            <p class="content-center">
                 <strong><em class="about">блог про путешествия в удаленные уголки нашей планеты</em></strong>
             </p>
         </article>
         <div class="container">
-            <h2 align="right">Мои путешествия</h2>
-            <div class="blockstory">
-                <h3 align="right">
-                    <a class="namestory" href="Papua.html">Папуа Новая Гвинея</a>
-                </h3>
-                <h4 align="right">
+            <div class="blockstory flex-row-blockstory wrap">
+                <div class="flex-12 content-center">
+                    <h3>
+                        <a class="namestory" href="Papua.html">Папуа Новая Гвинея</a>
+                    </h3>
+                    <h4>
                         Автор:<a href="me.html" class="autor">Петя</a> | 11.11.2019
-                </h4>
-                <a href="Papua.html">
-                    <img src="img/papua/papua1.jpg" alt="Папуа Новая Гвинея">
-                </a>
-                <p align="justify">
-                    <em>
-                        Па́пуа — Но́вая Гвине́я, Па́пуа-Но́вая Гвине́я (полное название — Незави́симое Госуда́рство Па́пуа Но́вая Гвине́я; англ. Papua New Guinea [ˈpæpuːə njuː ˈɡɪni] (тж. ˈpɑːpuːə, ˈpæpjuːə), ток-писин Papua Niugini, хири-моту Papua Niu Gini) — государство в Океании, в юго-западной части Тихого океана, занимает восточную часть острова Новая Гвинея, архипелаг Бисмарка, северную часть Соломоновых островов (о-ва Бугенвиль, Бука), о-ва Д’Антркасто и др. Площадь — 462 840 км². Население — 7 275 324 человека (2011) — главным образом, папуасы и меланезийцы. Городское население — 15,2 % (1991).
-                        Официальные языки — английский, ток-писин и хири-моту. Большая часть населения — христиане, остальные придерживаются местных традиционных верований. Административно-территориальное деление: 20 провинций. Столица — Порт-Морсби. Входит в Содружество наций. Глава государства — британская королева, представленная генерал-губернатором. Законодательный орган — Национальный парламент.
-                    </em>
-                </p>
-                <a href="Grenland.html" class="readnext">Читать дальше</a>
+                    </h4>
+                </div>
+                <div class="flex-6">
+                    <a href="Papua.html">
+                        <img src="img/papua/papua1.jpg" alt="Папуа Новая Гвинея">
+                    </a>
+                </div>
+                <div class="flex-6">
+                    <p align="justify">
+                        <em>
+                            Па́пуа — Но́вая Гвине́я, Па́пуа-Но́вая Гвине́я (полное название — Незави́симое Госуда́рство Па́пуа Но́вая Гвине́я; англ. Papua New Guinea [ˈpæpuːə njuː ˈɡɪni] (тж. ˈpɑːpuːə, ˈpæpjuːə), ток-писин Papua Niugini, хири-моту Papua Niu Gini) — государство в Океании, в юго-западной части Тихого океана, занимает восточную часть острова Новая Гвинея, архипелаг Бисмарка, северную часть Соломоновых островов (о-ва Бугенвиль, Бука), о-ва Д’Антркасто и др. Площадь — 462 840 км².
+                        </em>
+                    </p>
+                    <div class="content-center"><a href="Grenland.html" class="readnext">Читать дальше</a></div>
+                </div>
             </div>
-            <div class="blockstory">
-                <h3 align="right">
-                    <a class="namestory" href="Grenland.html">Гренландия</a>
-                </h3>
-                <h4 align="right">
-                    Автор:<a href="me.html" class="autor">Петя</a> | 02.02.2020
-                </h4>
-                <a href="Grenland.html">
-                    <img src="img/grenland/grenland1.jpg" alt="Гренландия">
-                </a>
-                <p align="justify">
-                    <em>
-                        Гренла́ндия (гренл. Kalaallit Nunaat, дат. Grønland) — крупнейший на Земле остров. Расположен на северо-востоке Северной Америки, а потому с точки зрения физической географии относится к ней. Политически относится к Европе, поскольку вместе с окружающими меньшими островами образует административную автономную единицу Гренландию, принадлежащую Дании.Омывается Атлантическим и Северным Ледовитым океанами. Его площадь составляет 2 130 800 км², протяжённость с севера на юг 2700 км, а с запада на восток — 1300 км. По площади он в три раза уступает Австралии — наименьшему из континентов.
-                    </em>
-                </p>
-                <a href="Grenland.html" class="readnext">Читать дальше</a>
+            <div class="blockstory flex-row-blockstory wrap">
+                <div class="flex-12 content-center">
+                    <h3>
+                        <a class="namestory" href="Grenland.html">Гренландия</a>
+                    </h3>
+                    <h4>
+                        Автор:<a href="me.html" class="autor">Петя</a> | 02.02.2020
+                    </h4>
+                </div>
+                <div class="flex-6">
+                    <a href="Grenland.html">
+                        <img src="img/grenland/grenland1.jpg" alt="Гренландия">
+                    </a>
+                </div>
+                <div class="flex-6">
+                    <p align="justify">
+                        <em>
+                            Гренла́ндия (гренл. Kalaallit Nunaat, дат. Grønland) — крупнейший на Земле остров. Расположен на северо-востоке Северной Америки, а потому с точки зрения физической географии относится к ней. Политически относится к Европе, поскольку вместе с окружающими меньшими островами образует административную автономную единицу Гренландию, принадлежащую Дании.Омывается Атлантическим и Северным Ледовитым океанами. Его площадь составляет 2 130 800 км², протяжённость с севера на юг 2700 км, а с запада на восток — 1300 км. По площади он в три раза уступает Австралии — наименьшему из континентов.
+                        </em>
+                    </p>
+                    <div class="content-center"><a href="Grenland.html" class="readnext">Читать дальше</a></div>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <section align="left">
-            <h5><a href="me.html">Обо мне</a></h5>
-        </section>
-        <section align="right">
-            <h5>Соц. Сети</h5>
-            <nav>
-                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-            </nav>
-        </section>
-        <section align="center">
-            <h5>Поддержать проект</h5>
-            <nav>
-                <a href="https://www.paypal.com/ru/home" target="_blank">Paypal</a>
-                <a href="https://www.webmoney.ru/" target="_blank">Webmoney</a>
-                <a href="https://qiwi.com/" target="_blank">Qiwi</a>
+        <div class="container flex_footer">
+            <section class="content-center">
+                <h5><a href="me.html">Обо мне</a></h5>
+            </section>
+            <section class="content-center">
+                <h5>Соц. Сети</h5>
+                <nav>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                </nav>
+            </section>
+            <section class="content-center">
+                <h5>Поддержать проект</h5>
+                <nav>
+                    <a href="https://www.paypal.com/ru/home" target="_blank">Paypal</a>
+                    <a href="https://www.webmoney.ru/" target="_blank">Webmoney</a>
+                    <a href="https://qiwi.com/" target="_blank">Qiwi</a>
 
-            </nav>
-        </section>
+                </nav>
+            </section>
+        </div>
     </footer>
 </body>
 </html>

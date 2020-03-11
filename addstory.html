@@ -12,14 +12,14 @@
 
 <body>
 <header>
-    <nav>
-        <ul>
-            <li>
+    <nav class="container">
+        <ul class="flex-row menu">
+            <li class="flex-2 content-center">
                 <a href="main.html">Главная</a>
             </li>
-            <li>
-                Мои путешествия
-                <ul>
+            <li class="flex-2 content-center">
+                <a href="#">Мои путешествия</a>
+                <ul class="submenu">
                     <li>
                         <a href="Papua.html">Папуа Новая Гвинея</a>
                     </li>
@@ -31,14 +31,17 @@
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="findme.html">Где я?</a>
+            <li class="flex-2 content-center">
+                <a href="Findme.html">Где я?</a>
             </li>
-            <li>
+            <li class="flex-2 content-center">
                 <a href="auth.html">Авторизация</a>
             </li>
-            <li>
+            <li class="flex-2 content-center">
                 <a href="reg.html">Регистрация</a>
+            </li>
+            <li class="flex-2 content-center">
+                <a href="me.html">Контакты</a>
             </li>
         </ul>
     </nav>
@@ -87,26 +90,28 @@
     <button type="reset" form="addstory" title="кнопка не в форме">Сброс</button>
 </main>
 <footer>
-    <section align="left">
-        <h5><a href="me.html">Обо мне</a></h5>
-    </section>
-    <section align="right">
-        <h5>Соц. Сети</h5>
-        <nav>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-        </nav>
-    </section>
-    <section align="center">
-        <h5>Поддержать проект</h5>
-        <nav>
-            <a href="https://www.paypal.com/ru/home" target="_blank">Paypal</a>
-            <a href="https://www.webmoney.ru/" target="_blank">Webmoney</a>
-            <a href="https://qiwi.com/" target="_blank">Qiwi</a>
+    <div class="container flex_footer">
+        <section class="content-center">
+            <h5><a href="me.html">Обо мне</a></h5>
+        </section>
+        <section class="content-center">
+            <h5>Соц. Сети</h5>
+            <nav>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+            </nav>
+        </section>
+        <section class="content-center">
+            <h5>Поддержать проект</h5>
+            <nav>
+                <a href="https://www.paypal.com/ru/home" target="_blank">Paypal</a>
+                <a href="https://www.webmoney.ru/" target="_blank">Webmoney</a>
+                <a href="https://qiwi.com/" target="_blank">Qiwi</a>
 
-        </nav>
-    </section>
+            </nav>
+        </section>
+    </div>
 </footer>
 </body>
 </html>

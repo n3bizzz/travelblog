@@ -7,73 +7,85 @@
     <meta name="author" content="bizz">
     <title>На краю света</title>
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="main.html">Главная</a>
-                </li>
-                <li>
-                    Мои путешествия
-                    <ul>
-                        <li>
-                            <a href="Papua.html">Папуа Новая Гвинея</a>
-                        </li>
-                        <li>
-                            <a href="Grenland.html">Гренландия</a>
-                        <li>
-                            <a href="addstory.html">Добавить статью</a>
-                        </li>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="Findme.html">Где я?</a>
-                </li>
-                <li>
-                    <a href="auth.html">Авторизация</a>
-                </li>
-                <li>
-                    <a href="reg.html">Регистрация</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="container">
+        <ul class="flex-row menu">
+            <li class="flex-2 content-center">
+                <a href="main.html">Главная</a>
+            </li>
+            <li class="flex-2 content-center">
+                <a href="#">Мои путешествия</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="Papua.html">Папуа Новая Гвинея</a>
+                    </li>
+                    <li>
+                        <a href="Grenland.html">Гренландия</a>
+                    </li>
+                    <li>
+                        <a href="addstory.html">Добавить статью</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="flex-2 content-center">
+                <a href="Findme.html">Где я?</a>
+            </li>
+            <li class="flex-2 content-center">
+                <a href="auth.html">Авторизация</a>
+            </li>
+            <li class="flex-2 content-center">
+                <a href="reg.html">Регистрация</a>
+            </li>
+            <li class="flex-2 content-center">
+                <a href="me.html">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+</header>
     <main>
-        <article class="container">
-            <h3 class="namestory" align="center">Блог о моем путешествии в Гренландию</h3>
-            <p  align="center">
+        <article class="container content-center">
+            <h3 class="namestory">Блог о моем путешествии в Гренландию</h3>
+            <p>
                 <em class="about">Доброго времени суток! Здесь я расскажу про свое путешествие в Гренландию</em>
             </p>
         </article>
-        <div class="container">
-            <h4 class="day" align="left">День 1</h4>
-            <p align="justify">
-                <em>
-                    Гренла́ндия (гренл. Kalaallit Nunaat, дат. Grønland) — крупнейший на Земле остров. Расположен на северо-востоке Северной Америки, а потому с точки зрения физической географии относится к ней. Политически относится к Европе, поскольку вместе с окружающими меньшими островами образует административную автономную единицу Гренландию, принадлежащую Дании.Омывается Атлантическим и Северным Ледовитым океанами. Его площадь составляет 2 130 800 км², протяжённость с севера на юг 2700 км, а с запада на восток — 1300 км. По площади он в три раза уступает Австралии — наименьшему из континентов.
-                </em>
-            </p>
-            <div>
-                <a href="img/grenland/grenland1.jpg" download><img src="img/grenland/grenland1.jpg" alt="Гренландия" ></a>
-                <a href="img/grenland/grenland2.jpg" download><img src="img/grenland/grenland2.jpg" alt="Гренландия" ></a>
-                <a href="img/grenland/grenland3.jpg" download><img src="img/grenland/grenland3.jpg" alt="Гренландия" ></a>
-                <a href="img/grenland/grenland4.jpg" download><img src="img/grenland/grenland4.jpg" alt="Гренландия" ></a>
-                <a href="img/grenland/grenland5.jpg" download><img src="img/grenland/grenland5.jpg" alt="Гренландия" ></a>
+        <div class="flex-row-blockstory wrap container">
+            <div class="flex-12 content-center">
+                <h4 class="day">День 1</h4>
             </div>
-            <div>
+            <div class="flex-row-blockstory flex-6 wrap">
+                <a class="flex-4" href="img/grenland/grenland1.jpg" download><img src="img/grenland/grenland1.jpg" alt="Гренландия" ></a>
+                <a class="flex-4" href="img/grenland/grenland2.jpg" download><img src="img/grenland/grenland2.jpg" alt="Гренландия" ></a>
+                <a class="flex-4" href="img/grenland/grenland3.jpg" download><img src="img/grenland/grenland3.jpg" alt="Гренландия" ></a>
+                <a class="flex-4" href="img/grenland/grenland4.jpg" download><img src="img/grenland/grenland4.jpg" alt="Гренландия" ></a>
+                <a class="flex-4" href="img/grenland/grenland5.jpg" download><img src="img/grenland/grenland5.jpg" alt="Гренландия" ></a>
+                <a class="flex-4" href="img/grenland/grenland6.jpg" download><img src="img/grenland/grenland6.jpg" alt="Гренландия" ></a>
+            </div>
+            <div class="flex-6">
+                <a href="img/grenland/grenland1.jpg" download><img src="img/grenland/grenland1.jpg" alt="Гренландия" ></a>
+            </div>
+            <div class="flex-12">
+                <p align="justify">
+                    <em>
+                        Гренла́ндия (гренл. Kalaallit Nunaat, дат. Grønland) — крупнейший на Земле остров. Расположен на северо-востоке Северной Америки, а потому с точки зрения физической географии относится к ней. Политически относится к Европе, поскольку вместе с окружающими меньшими островами образует административную автономную единицу Гренландию, принадлежащую Дании.Омывается Атлантическим и Северным Ледовитым океанами. Его площадь составляет 2 130 800 км², протяжённость с севера на юг 2700 км, а с запада на восток — 1300 км. По площади он в три раза уступает Австралии — наименьшему из континентов.
+                    </em>
+                </p>
+            </div>
+            <div class="flex-12 content-center">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/f7hbWvHKns0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </main>
     <footer>
-        <section align="left">
+    <div class="container flex_footer">
+        <section class="content-center">
             <h5><a href="me.html">Обо мне</a></h5>
         </section>
-        <section align="right">
+        <section class="content-center">
             <h5>Соц. Сети</h5>
             <nav>
                 <a href="https://www.instagram.com/" target="_blank">Instagram</a>
@@ -81,7 +93,7 @@
                 <a href="https://www.youtube.com/" target="_blank">Youtube</a>
             </nav>
         </section>
-        <section align="center">
+        <section class="content-center">
             <h5>Поддержать проект</h5>
             <nav>
                 <a href="https://www.paypal.com/ru/home" target="_blank">Paypal</a>
@@ -90,6 +102,7 @@
 
             </nav>
         </section>
+    </div>
     </footer>
 </body>
 </html>

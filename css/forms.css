@@ -1,4 +1,5 @@
 @import "style.css";
+@import "flex.css";
 form {
     max-width: 1000px;
     margin: 0 auto;
