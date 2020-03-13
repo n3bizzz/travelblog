@@ -245,15 +245,11 @@ ul li:hover .submenu{
     top: 40%;
     left: 40%;
     padding: 0;
-    min-width: 200px;
-    max-width: 350px;
 }
 .modalauth form {
     background: whitesmoke;
     padding: 10px;
     border-radius: 5px;
-    min-width: 200px;
-    max-width: 350px;
 
 }
 
@@ -284,15 +280,12 @@ ul li:hover .submenu{
     top: 20%;
     left: 30%;
     padding: 0;
-    min-width: 300px;
-    max-width: 450px;
+
 }
 .modalreg form {
     background: whitesmoke;
     padding: 10px;
     border-radius: 5px;
-    min-width: 300px;
-    max-width: 450px;
 }
 
 .modalreg:not(:target) {
