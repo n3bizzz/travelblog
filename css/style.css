@@ -216,12 +216,14 @@ footer :first-child {
 .gallery img:hover {
     opacity: 1;
 }
-#submenu:hover + .submenu{
-    display: block;
-}
-#submenu:not(:hover) + .submenu  {
+.submenu {
     display: none;
 }
+ul li:hover .submenu{
+    display: block;
+}
+
+
 
 
 
