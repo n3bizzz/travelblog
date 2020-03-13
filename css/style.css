@@ -1,3 +1,5 @@
+@import "forms.css";
+@import "flex.css";
 * {
     box-sizing: border-box;
 }
@@ -10,28 +12,92 @@ body{
     font-size: 20px;
     margin: 0;
 }
+
+/*Верхнее меню*/
+.menu a{
+    border: 2px solid white;
+    color: darkgreen;
+    display: block;
+    font-weight: bolder;
+    background: whitesmoke;
+}
+header {
+    background-color: rgba(245,245,245,0.4);
+}
+.submenu a{
+    border-top: none;
+}
+.menu li {
+    flex-grow: 1;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-a {
-    text-decoration: none;
+
+
+
+
+/*Размер и расположение */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.content-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+.blockstory {
+    margin: 20px;
+    padding: 10px;
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: 5px;
 }
 img {
     width: 100%;
     height: auto;
     margin: 0;
 }
+iframe{
+    margin: 10px;
+}
+iframe.map{
+    margin: 10px;
+    border-radius: 5px;
+}
+.ava {
+    width: 100%;
+    height: 100%;
+}
+.datenote{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+.datenote>h3{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.datenote>img {
+    border-radius: 5px;
+}
+
+
+
+/*декор остальных тегов и селекторов*/
+a {
+    text-decoration: none;
+}
 .about {
     background-color: whitesmoke;
     font-size: 20px;
     color: black;
     font-family: Arial;
-}
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
 }
 .autor {
     color: orangered;
@@ -50,8 +116,6 @@ h1 {
     color: red;
     margin-top: 100px;
 }
-
-
 h2 {
     margin-top: 140px;
     margin-bottom: 40px;
@@ -77,50 +141,33 @@ h4 {
 p {
     margin: 10px;
 }
-
 p em {
     background-color: whitesmoke;
     font-family: "Californian FB";
     border-radius: 15px;
 }
-
-.blockstory {
-    margin-top: 60px;
-    margin-bottom: 10px;
-    border: 1px solid white;
-}
-.blockstory>div {
-    border: 1px solid white;
-}
 .day {
     font-size: 20px;
     margin: 30px;
 }
-iframe{
-    margin-bottom: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-iframe.map{
-    margin: 0;
-}
-.date {
+.datenote>h3 {
     color: orangered;
     margin: 10px;
+    background: rgba(245,245,245, 0.5);
 }
 .find {
     color: red;
     margin: 10px;
 }
-.ava {
-    width: 100%;
-    height: 100%;
-
-}
-.mycontacts {
+.mycontacts>h3 {
     margin-top: 40px;
     margin-left: 10px;
     color: darkgreen;
+}
+.mycontacts {
+    background: rgba(245,245,245,0.5);
+    margin: 10px;
+    border-radius: 5px;
 }
 ol {
     color: darkgreen;
@@ -129,29 +176,130 @@ ol a {
     color: lightgreen;
     text-decoration-line: underline
 }
-
-.menu a{
-    border: 1px solid white;
-    color: darkgreen;
-    display: block;
+.gallery img {
+    opacity: 0.6;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.gallery a
+{
+    padding: 5px;
 }
 
-header {
-    background-color: rgba(245,245,245,0.4);
+.gallery {
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: 5px;
 }
-.submenu a{
-    border-top: none;
-}
-
-.content-center {
-    text-align: center;
+.videogal {
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: 5px;
 }
 
+/*footer*/
 footer {
-    background-color: rgba(0,100,0,0.4);
+    max-width: 1000px;
+    margin: 0 auto;
     padding-bottom: 30px;
-    padding-top: 15px;
+    background-color: rgba(0,100,0,0.4);
 }
 footer a {
     color: white;
+}
+footer :first-child {
+    align-self: center;
+}
+
+/*псевдо*/
+footer :first-child {
+    align-self: center;
+}
+.gallery img:hover {
+    opacity: 1;
+}
+#submenu:hover + .submenu{
+    display: block;
+}
+#submenu:not(:hover) + .submenu  {
+    display: none;
+}
+
+
+
+/*modal*/
+.modalauth {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,100,0, 0.9);
+}
+.modalauth:target {
+    top: 0;
+    display: block;
+}
+.modalauth>section{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 40%;
+    left: 40%;
+    padding: 0;
+    min-width: 200px;
+    max-width: 350px;
+}
+.modalauth form {
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 200px;
+    max-width: 350px;
+
+}
+
+.modalauth:not(:target) {
+    display: none;
+}
+.close-modal {
+    color: darkgreen;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: smaller;
+}
+.modalreg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,100,0, 0.9);
+}
+.modalreg:target {
+    top: 0;
+    display: block;
+}
+.modalreg>section{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 20%;
+    left: 30%;
+    padding: 0;
+    min-width: 300px;
+    max-width: 450px;
+}
+.modalreg form {
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+.modalreg:not(:target) {
+    display: none;
+}
+.close-modal {
+    color: darkgreen;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: smaller;
 }

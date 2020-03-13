@@ -1,9 +1,4 @@
-@import "style.css";
-@import "flex.css";
-form {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+
 fieldset {
     border: 2px solid gold;
 }

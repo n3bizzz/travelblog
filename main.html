@@ -7,18 +7,18 @@
     <meta name="author" content="bizz">
     <title>На краю света</title>
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <nav class="container">
-            <ul class="flex-row menu">
-                <li class="flex-2 content-center">
+            <ul class="flex-row space-around menu content-center">
+                <li>
                     <a href="main.html">Главная</a>
                 </li>
-                <li class="flex-2 content-center">
-                    <a href="#">Мои путешествия</a>
+                <li>
+                    <a id="submenu" href="#">Мои путешествия</a>
                     <ul class="submenu">
                         <li>
                             <a href="Papua.html">Папуа Новая Гвинея</a>
@@ -31,100 +31,125 @@
                         </li>
                     </ul>
                 </li>
-                <li class="flex-2 content-center">
-                    <a href="Findme.html">Где я?</a>
+                <li>
+                    <a href="findme.html">Где я?</a>
                 </li>
-                <li class="flex-2 content-center">
-                    <a href="auth.html">Авторизация</a>
+                <li>
+                    <a href="#reg">Регистрация</a>
                 </li>
-                <li class="flex-2 content-center">
-                    <a href="reg.html">Регистрация</a>
-                </li>
-                <li class="flex-2 content-center">
-                    <a href="me.html">Контакты</a>
+                <li>
+                    <a href="#auth">Войти</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <article class="container">
-            <h1 class="content-center">НА КРАЮ СВЕТА</h1>
-            <p class="content-center">
+    <main class="container content-center">
+        <article>
+            <h1>НА КРАЮ СВЕТА</h1>
+            <p>
                 <strong><em class="about">блог про путешествия в удаленные уголки нашей планеты</em></strong>
             </p>
         </article>
-        <div class="container">
-            <div class="blockstory flex-row-blockstory wrap">
-                <div class="flex-12 content-center">
+        <div class="flex-row ">
+                <div class="blockstory flex-columnn  flex-1">
                     <h3>
                         <a class="namestory" href="Papua.html">Папуа Новая Гвинея</a>
                     </h3>
                     <h4>
                         Автор:<a href="me.html" class="autor">Петя</a> | 11.11.2019
                     </h4>
-                </div>
-                <div class="flex-6">
                     <a href="Papua.html">
                         <img src="img/papua/papua1.jpg" alt="Папуа Новая Гвинея">
                     </a>
-                </div>
-                <div class="flex-6">
-                    <p align="justify">
+                    <p class="text-justify">
                         <em>
                             Па́пуа — Но́вая Гвине́я, Па́пуа-Но́вая Гвине́я (полное название — Незави́симое Госуда́рство Па́пуа Но́вая Гвине́я; англ. Papua New Guinea [ˈpæpuːə njuː ˈɡɪni] (тж. ˈpɑːpuːə, ˈpæpjuːə), ток-писин Papua Niugini, хири-моту Papua Niu Gini) — государство в Океании, в юго-западной части Тихого океана, занимает восточную часть острова Новая Гвинея, архипелаг Бисмарка, северную часть Соломоновых островов (о-ва Бугенвиль, Бука), о-ва Д’Антркасто и др. Площадь — 462 840 км².
                         </em>
                     </p>
-                    <div class="content-center"><a href="Grenland.html" class="readnext">Читать дальше</a></div>
+                    <a href="Grenland.html" class="readnext">Читать дальше</a>
                 </div>
-            </div>
-            <div class="blockstory flex-row-blockstory wrap">
-                <div class="flex-12 content-center">
+                <div class="flex-columnn flex-1 blockstory">
                     <h3>
                         <a class="namestory" href="Grenland.html">Гренландия</a>
                     </h3>
                     <h4>
                         Автор:<a href="me.html" class="autor">Петя</a> | 02.02.2020
                     </h4>
-                </div>
-                <div class="flex-6">
                     <a href="Grenland.html">
                         <img src="img/grenland/grenland1.jpg" alt="Гренландия">
                     </a>
-                </div>
-                <div class="flex-6">
-                    <p align="justify">
+                    <p class="text-justify">
                         <em>
                             Гренла́ндия (гренл. Kalaallit Nunaat, дат. Grønland) — крупнейший на Земле остров. Расположен на северо-востоке Северной Америки, а потому с точки зрения физической географии относится к ней. Политически относится к Европе, поскольку вместе с окружающими меньшими островами образует административную автономную единицу Гренландию, принадлежащую Дании.Омывается Атлантическим и Северным Ледовитым океанами. Его площадь составляет 2 130 800 км², протяжённость с севера на юг 2700 км, а с запада на восток — 1300 км. По площади он в три раза уступает Австралии — наименьшему из континентов.
                         </em>
                     </p>
-                    <div class="content-center"><a href="Grenland.html" class="readnext">Читать дальше</a></div>
+                    <a href="Grenland.html" class="readnext">Читать дальше</a>
                 </div>
-            </div>
         </div>
     </main>
-    <footer>
-        <div class="container flex_footer">
-            <section class="content-center">
-                <h5><a href="me.html">Обо мне</a></h5>
-            </section>
-            <section class="content-center">
-                <h5>Соц. Сети</h5>
-                <nav>
-                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                    <a href="https://www.youtube.com/" target="_blank">Youtube</a>
-                </nav>
-            </section>
-            <section class="content-center">
-                <h5>Поддержать проект</h5>
-                <nav>
-                    <a href="https://www.paypal.com/ru/home" target="_blank">Paypal</a>
-                    <a href="https://www.webmoney.ru/" target="_blank">Webmoney</a>
-                    <a href="https://qiwi.com/" target="_blank">Qiwi</a>
-
-                </nav>
-            </section>
-        </div>
+    <footer class="content-center flex-row space-around">
+            <h5><a href="me.html">Обо мне</a></h5>
+        <section>
+            <h5>Соц. Сети</h5>
+            <nav class="flex-columnn">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+            </nav>
+        </section>
+        <section>
+            <h5>Поддержать проект</h5>
+            <nav class="flex-columnn">
+                <a href="https://www.paypal.com/ru/home" target="_blank">Paypal</a>
+                <a href="https://www.webmoney.ru/" target="_blank">Webmoney</a>
+                <a href="https://qiwi.com/" target="_blank">Qiwi</a>
+            </nav>
+        </section>
     </footer>
+    <section class="modalauth content-center" id="auth">
+        <section>
+            <form class="flex-columnn" name="auth" action="#" method="post">
+                <h3>Авторизация</h3>
+                <input type="email" name="email" placeholder="e-mail" required>
+                <input type="password" minlength="8" name="password" placeholder="пароль" required>
+                <label>
+                    <input type="checkbox" name="remember">
+                    Запомнить
+                </label>
+                <input type="submit" value="Войти">
+                <a href="#reg">Зарегистрироваться</a>
+            </form>
+            <a class="close-modal" href="#">X</a>
+        </section>
+    </section>
+    <section class="modalreg content-center" id="reg">
+        <section>
+            <form class="flex-columnn" enctype="multipart/form-data" name="reg" action="#" method="post">
+                <h3>Форма регистрации</h3>
+                    <label for="login">Введите имя пользователя</label>
+                    <input minlength="3" maxlength="12" id="login" type="text" name="login" placeholder="от 3 до 12 символов" autofocus>
+                    <label for="email">Введите ваш e-mail алрес</label>
+                    <input id="email" type="email" name="email" placeholder="реальный e-mail адрес" required>
+                    <label for="pas">Введите пароль</label>
+                    <input id="pas" minlength="8" type="password" name="pas" placeholder="не менее 8 символов">
+                    <label for="age">Ваш возраст</label>
+                    <input id="age" type="number" min="0" max="99" name="age" placeholder="0-99" required>
+                    <label for="gender">Ваш пол</label>
+                    <select id="gender" name="gender"  required>
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                        <option value="any" selected>Не сообщаю</option>
+                    </select>
+                    <label for="ava">Загрузить аватар</label>
+                    <input id="ava" type="file" accept="image/*" name="ava">
+                    <label>
+                        Я принимаю правила сайта
+                        <input type="checkbox" name="rules" required>
+                    </label>
+                    <input type="submit" value="Зарегистрироваться">
+            </form>
+            <a class="close-modal" href="#">X</a>
+        </section>
+    </section>
 </body>
 </html>
