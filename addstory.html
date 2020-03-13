@@ -44,7 +44,8 @@
     </nav>
 </header>
     <main class="container content-center">
-    <form  class="flex-columnn" id="addstory" enctype="multipart/form-data" name="addstory" action="#" method="post">
+    <div class="flex-row flex-center">
+        <form  class="flex-columnn " id="addstory" enctype="multipart/form-data" name="addstory" action="#" method="post">
         <h3>Добавить статью</h3>
             <label for="name">Введите название статьи</label>
             <input minlength="2" maxlength="20" id="name" type="text" name="name" placeholder="от 2 до 20 символов" autofocus>
@@ -70,6 +71,7 @@
             </div>
             <input type="submit" value="Опубликовать статью">
     </form >
+    </div>
     <button type="reset" form="addstory" title="кнопка не в форме">Сброс</button>
 </main>
     <footer class="content-center flex-row space-around">

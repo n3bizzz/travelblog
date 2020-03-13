@@ -86,6 +86,11 @@ iframe.map{
 .datenote>img {
     border-radius: 5px;
 }
+#addstory {
+    width: 50%;
+    height: auto;
+    margin: 20px;
+}
 
 
 
