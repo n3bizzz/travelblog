@@ -35,6 +35,9 @@ ul {
     margin: 0;
     padding: 0;
 }
+.submenu {
+    display: none;
+}
 
 
 
@@ -220,9 +223,6 @@ footer :first-child {
 }
 .gallery img:hover {
     opacity: 1;
-}
-.submenu {
-    display: none;
 }
 ul li:hover .submenu{
     display: block;
