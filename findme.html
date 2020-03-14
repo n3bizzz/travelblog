@@ -99,8 +99,8 @@
         <section>
             <form class="flex-columnn" name="auth" action="#" method="post">
                 <h3>Авторизация</h3>
-                <input type="email" name="email" placeholder="e-mail" required>
-                <input type="password" minlength="8" name="password" placeholder="пароль" required>
+                <div><input type="email" name="email" placeholder="e-mail" required><span></span></div>
+                <div><input type="password" minlength="8" name="password" placeholder="пароль" required><span></span></div>
                 <label>
                     <input type="checkbox" name="remember">
                     Запомнить
@@ -116,13 +116,13 @@
             <form class="flex-columnn" enctype="multipart/form-data" name="reg" action="#" method="post">
                 <h3>Форма регистрации</h3>
                 <label for="login">Введите имя пользователя</label>
-                <input minlength="3" maxlength="12" id="login" type="text" name="login" placeholder="от 3 до 12 символов" autofocus>
+                <div><input minlength="3" maxlength="12" id="login" type="text" name="login" placeholder="от 3 до 12 символов" required><span></span></div>
                 <label for="email">Введите ваш e-mail алрес</label>
-                <input id="email" type="email" name="email" placeholder="реальный e-mail адрес" required>
+                <div><input id="email" type="email" name="email" placeholder="реальный e-mail адрес" required><span></span></div>
                 <label for="pas">Введите пароль</label>
-                <input id="pas" minlength="8" type="password" name="pas" placeholder="не менее 8 символов">
+                <div><input id="pas" minlength="8" type="password" name="pas" placeholder="не менее 8 символов" required><span></span></div>
                 <label for="age">Ваш возраст</label>
-                <input id="age" type="number" min="0" max="99" name="age" placeholder="0-99" required>
+                <div><input id="age" type="number" min="0" max="99" name="age" placeholder="0-99" value="0" required><span></span></div>
                 <label for="gender">Ваш пол</label>
                 <select id="gender" name="gender"  required>
                     <option value="male">Мужской</option>

@@ -1,11 +1,72 @@
 
-fieldset {
-    border: 2px solid gold;
-}
-
 input[type="submit"] {
     border: 0;
-    padding: 5px 15px;
+    padding: 10px 10px;
     border-radius: 5px;
-    background: gold;
+    background: darkgreen;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+form :focus {
+    outline: none;
+    border-color: lightgreen;
+}
+form>h3, form>h5, form>a {
+    color: darkgreen;
+}
+form label, #addstory p {
+    color: green;
+    font-size: 15px;
+}
+
+#addstory {
+    background: rgba(245,245,245,0.7);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.resetstory
+{
+    background: darkgreen;
+    color: white;
+}
+
+textarea:valid,
+input:in-range, /*числа в диапозоне*/
+input[type="text"]:valid,
+input[type="password"]:valid,
+input[type="email"]:valid
+{
+    border: 1px solid green;
+}
+
+textarea:invalid,
+input:out-of-range,
+input[type="text"]:invalid,
+input[type="password"]:invalid,
+input[type="email"]:invalid
+{
+    border: 1px solid red;
+}
+
+
+form :required + span:before
+{
+    content: "\2718";
+    font-weight: bolder;
+    color: red;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+form :required:focus:valid + span:before,
+form :required:not(:focus):valid + span:before
+{
+    content: "\2714";
+    font-weight: bolder;
+    color: green;
+    margin-left: 10px;
+    font-size: 15px;
 }
