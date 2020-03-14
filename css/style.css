@@ -227,7 +227,10 @@ footer :first-child {
 ul li:hover .submenu{
     display: block;
 }
-
+header li:hover>a {
+  background: darkgreen;
+  color: white;
+}
 
 
 
