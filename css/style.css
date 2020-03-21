@@ -85,8 +85,8 @@ iframe.map{
 }
 .datenote>h3{
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 .datenote>img {
     border-radius: 5px;
@@ -230,6 +230,7 @@ footer :first-child {
 }
 ul li:hover .submenu{
     display: block;
+    position: fixed;
 }
 header li:hover>a {
   background: darkgreen;
